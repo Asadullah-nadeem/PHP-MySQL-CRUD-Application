@@ -1,5 +1,4 @@
 
-<!-- Footer -->
 <div class="footer">
     <div class="container">
         <div class="row text-center">
@@ -7,9 +6,9 @@
                 <div class="footer_copyright">
                     &copy; <span id="currentYear"></span>
                 </div>
-            </div><!--- END COL -->
-        </div><!--- END ROW -->
-    </div><!--- END CONTAINER -->
+            </div>
+        </div>
+    </div>
 </div>
 
 
