@@ -3,7 +3,6 @@ header("Content-Type: application/json");
 
 require '../dbcon.php';
 
-// Function to handle POST requests (Create)
 function createStudent($data)
 {
     global $con;
@@ -22,12 +21,10 @@ function createStudent($data)
     }
 }
 
-// Function to handle GET requests (Read)
 function getStudents()
 {
     global $con;
 
-    // Specify columns excluding the 'id'
     $query = "SELECT name, email, phone, course FROM students";
     $result = mysqli_query($con, $query);
 
@@ -40,7 +37,6 @@ function getStudents()
     return json_encode($students);
 }
 
-// Check request method
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"), true);
 
